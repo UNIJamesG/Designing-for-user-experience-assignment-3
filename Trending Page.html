@@ -31,8 +31,9 @@
     }
 
     .trend img {
-      max-width: 100%;
-      height: auto;
+      width: 250px;                  /* Set all images to the same width */
+      height: 250px;                 /* Set all images to the same height */
+      object-fit: cover;             /* Ensure the image covers the box without distorting */
       border: 2px solid white;
       border-radius: 10px;
       transition: transform 0.3s ease;
