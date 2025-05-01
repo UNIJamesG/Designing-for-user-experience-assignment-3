@@ -32,6 +32,11 @@
       border: none;
       padding: 0;
       background: none;
+      transition: transform 0.3s ease;
+    }
+
+    .image-button:hover {
+      transform: scale(1.05); 
     }
 
     .image-button img {
@@ -39,6 +44,7 @@
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border: 2px solid white;
+      display: block;
     }
 
     .image-label {
@@ -62,6 +68,7 @@
       border: 2px solid white;
       border-radius: 8px;
       text-decoration: none;
+      transition: background-color 0.3s ease;
     }
 
     .back-link:hover {
@@ -81,17 +88,17 @@
 
     <button class="image-button">
       <img src="images/trend2.jpg" alt="Trend 2">
-      <span class="image-label">China</span>
+      <span class="image-label">Trend 2</span>
     </button>
 
     <button class="image-button">
       <img src="images/trend3.jpg" alt="Trend 3">
-      <span class="image-label">Nike</span>
+      <span class="image-label">Trend 3</span>
     </button>
 
     <button class="image-button">
       <img src="images/trend4.jpg" alt="Trend 4">
-      <span class="image-label">Napoleon</span>
+      <span class="image-label">Trend 4</span>
     </button>
   </div>
 
