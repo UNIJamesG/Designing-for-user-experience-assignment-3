@@ -19,10 +19,10 @@
     }
 
     .trend-container {
-      display: grid;                 /* Using CSS Grid */
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-      gap: 20px;                     /* Gap between items */
-      justify-items: center;         /* Center items horizontally */
+      display: grid;                 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;                     
+      justify-items: center;         
       margin-bottom: 60px;
     }
 
@@ -31,21 +31,21 @@
     }
 
     .trend img {
-      width: 250px;                  /* Set all images to the same width */
-      height: 250px;                 /* Set all images to the same height */
-      object-fit: cover;             /* Ensure the image covers the box without distorting */
+      width: 250px;                  
+      height: 250px;                 
+      object-fit: cover;             
       border: 2px solid white;
       border-radius: 10px;
       transition: transform 0.3s ease;
-      cursor: pointer;             /* Cursor turns to pointer to indicate it's clickable */
+      cursor: pointer;             
     }
 
     .trend img:hover {
-      transform: scale(1.05);         /* Image grows slightly on hover */
+      transform: scale(1.05);         
     }
 
     a {
-      text-decoration: none;        /* Remove underline from links */
+      text-decoration: none;        
     }
 
     a.back-link {
@@ -67,29 +67,29 @@
   <h1>Trending Topics</h1>
 
   <div class="trend-container">
-    <!-- START TREND BLOCK 1 (Image links to newPage.html) -->
+    
     <a href="newPage.html" class="trend">
       <img src="images/trend1.jpg" alt="Trend Image 1">
     </a>
-    <!-- END TREND BLOCK 1 -->
+   
 
-    <!-- START TREND BLOCK 2 -->
+    
     <a href="#" class="trend">
       <img src="images/trend2.jpg" alt="Trend Image 2">
     </a>
-    <!-- END TREND BLOCK 2 -->
+  
 
-    <!-- START TREND BLOCK 3 -->
+  
     <a href="#" class="trend">
       <img src="images/trend3.jpg" alt="Trend Image 3">
     </a>
-    <!-- END TREND BLOCK 3 -->
+   
 
-    <!-- START TREND BLOCK 4 -->
+   
     <a href="#" class="trend">
       <img src="images/trend4.jpg" alt="Trend Image 4">
     </a>
-    <!-- END TREND BLOCK 4 -->
+    
   </div>
 
   <a class="back-link" href="Home Page.html">← Back to Home</a>
