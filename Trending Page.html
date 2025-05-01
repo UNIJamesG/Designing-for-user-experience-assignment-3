@@ -1,8 +1,97 @@
-<div style="width: 1920px; height: 1080px; position: relative">
-  <div style="width: 1920px; height: 1080px; left: 0px; top: 0px; position: absolute; background: white; overflow: hidden">
-    <div style="width: 241px; height: 112px; left: 39px; top: 36px; position: absolute; background: rgba(0, 0, 0, 0.40)"></div>
-    <div style="left: 124px; top: 53px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 64px; font-family: Inter; font-weight: 300; word-wrap: break-word">Back</div>
-    <img style="width: 250px; height: 357px; left: 280px; top: 418px; position: absolute" src="MichaelJ.jpg" />
-    <div style="left: 626px; top: 14px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 128px; font-family: Inter; font-weight: 700; word-wrap: break-word">Trending</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trending</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+    }
+
+    .trend-container {
+      display: grid;                 /* Using CSS Grid */
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;                     /* Gap between items */
+      justify-items: center;         /* Center items horizontally */
+      margin-bottom: 60px;
+    }
+
+    .trend {
+      text-align: center;
+    }
+
+    .trend img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid white;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;             /* Cursor turns to pointer to indicate it's clickable */
+    }
+
+    .trend img:hover {
+      transform: scale(1.05);         /* Image grows slightly on hover */
+    }
+
+    a {
+      text-decoration: none;        /* Remove underline from links */
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1em;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    a.back-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trending Topics</h1>
+
+  <div class="trend-container">
+    <!-- START TREND BLOCK 1 (Image links to newPage.html) -->
+    <a href="newPage.html" class="trend">
+      <img src="images/trend1.jpg" alt="Trend Image 1">
+    </a>
+    <!-- END TREND BLOCK 1 -->
+
+    <!-- START TREND BLOCK 2 -->
+    <a href="#" class="trend">
+      <img src="images/trend2.jpg" alt="Trend Image 2">
+    </a>
+    <!-- END TREND BLOCK 2 -->
+
+    <!-- START TREND BLOCK 3 -->
+    <a href="#" class="trend">
+      <img src="images/trend3.jpg" alt="Trend Image 3">
+    </a>
+    <!-- END TREND BLOCK 3 -->
+
+    <!-- START TREND BLOCK 4 -->
+    <a href="#" class="trend">
+      <img src="images/trend4.jpg" alt="Trend Image 4">
+    </a>
+    <!-- END TREND BLOCK 4 -->
   </div>
-</div>
+
+  <a class="back-link" href="Home Page.html">← Back to Home</a>
+
+</body>
+</html>
