@@ -1,7 +1,71 @@
-<div style="width: 1920px; height: 1080px; position: relative; background: white; overflow: hidden">
-  <div style="left: 68px; top: 75px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 64px; font-family: Inter; font-weight: 300; word-wrap: break-word">Search:______________</div>
-  <div style="width: 651px; height: 101px; left: 68px; top: 393px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 96px; font-family: Inter; font-weight: 700; word-wrap: break-word">Encyclopedia</div>
-  <div style="width: 465px; height: 38px; left: 68px; top: 494px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 40px; font-family: Inter; font-weight: 300; word-wrap: break-word">Free Online Encyclopedia</div>
-  <div style="width: 621px; height: 284px; left: 1123px; top: 325px; position: absolute; background: black"></div>
-  <div style="left: 1302px; top: 432px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 64px; font-family: Inter; font-weight: 300; word-wrap: break-word">Trending</div>
-</div>
+import React from "react";
+import image2 from "./image-2.png";
+import image7 from "./image-7.png";
+import rectangle18 from "./rectangle-18.svg";
+import "./style.css";
+
+export const Slide = () => {
+  return (
+    <div className="slide" data-model-id="2013:63">
+      <div className="div">
+        <div className="overlap">
+          <div className="rectangle" />
+        </div>
+
+        <div className="overlap-group">
+          <div className="group" />
+
+          <img className="image" alt="Image" src={image7} />
+
+          <div className="rectangle-2" />
+        </div>
+
+        <div className="text-wrapper">Search:______________</div>
+
+        <div className="text-wrapper-2">Encyclopedia</div>
+
+        <div className="text-wrapper-3">Free Online Encyclopedia</div>
+
+        <div className="group-wrapper">
+          <div className="rectangle-wrapper">
+            <div className="rectangle-3" />
+          </div>
+        </div>
+
+        <div className="text-wrapper-4">Trending</div>
+
+        <div className="img-wrapper">
+          <img className="img" alt="Rectangle" src={rectangle18} />
+        </div>
+
+        <div className="div-wrapper">
+          <div className="rectangle" />
+        </div>
+
+        <div className="overlap-group-2">
+          <div className="rectangle-4" />
+
+          <div className="image-wrapper">
+            <img className="image-2" alt="Image" src={image2} />
+          </div>
+        </div>
+
+        <div className="overlap-2">
+          <div className="rectangle" />
+        </div>
+
+        <div className="group-2">
+          <div className="rectangle" />
+        </div>
+
+        <div className="group-3">
+          <div className="rectangle" />
+        </div>
+
+        <div className="text-wrapper-5">Bookmarks</div>
+
+        <div className="text-wrapper-6">X</div>
+      </div>
+    </div>
+  );
+};
